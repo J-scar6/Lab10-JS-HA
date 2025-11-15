@@ -1,3 +1,8 @@
+# https://github.com/J-scar6/Lab10-JS-HA
+# Partner 1: Jack Scarlett
+# Partner 2: Hanan Alaiti
+
+
 import unittest
 from calculator import *
 import math
@@ -15,9 +20,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(0,10),10)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(5,2),3)
-        self.assertEqual(sub(-1,-1),0)
-        self.assertEqual(sub(0,9),-9)
+        self.assertEqual(subtract(5,2),3)
+        self.assertEqual(subtract(-1,-1),0)
+        self.assertEqual(subtract(0,9),-9)
 
     def test_divide(self): # 3 assertions
         self.assertEqual(div(2,10,), 5)
@@ -26,7 +31,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, 5)
+            logarithm(0, 5)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertAlmostEqual(hypotenuse(3,4), 5.0)
@@ -49,13 +54,13 @@ class TestCalculator(unittest.TestCase):
             pass
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(10,100),2)
-        self.assertEqual(log(2, 8), 3)
-        self.assertEqual(log(3, 27), 3)
+        self.assertEqual(logarithm(10,100),2)
+        self.assertEqual(logarithm(2, 8), 3)
+        self.assertEqual(logarithm(3, 27), 3)
 
     def test_log_invalid_base(self): # 1 assertion
         try:
-            log(1,5)
+            logarithm(1,5)
             assert False, "Expected ValueError"
         except ValueError:
             pass

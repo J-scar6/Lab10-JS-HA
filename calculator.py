@@ -1,12 +1,14 @@
+#https://github.com/J-scar6/Lab10-JS-HA.git
+#Partner 1: Jack Scarlett
+#Partner 2: Hanan Alaiti
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-#https://github.com/J-scar6/Lab10-JS-HA.git
-#Partner 1: Jack Scarlett
-#Partner 2: Hanan Alaiti
+
 import math
 
 def square_root(a):
